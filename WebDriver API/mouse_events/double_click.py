@@ -1,4 +1,4 @@
-# 模拟鼠标双击操作
+# double_click()方法可以模拟鼠标双击操作
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 
