@@ -1,4 +1,4 @@
-# 模拟鼠标悬停操作
+# move_to_element()方法可以模拟鼠标悬停操作
 from selenium import webdriver
 # 引入ActionChains类
 from selenium.webdriver.common.action_chains import ActionChains
