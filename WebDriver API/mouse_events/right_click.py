@@ -1,4 +1,4 @@
-# 模拟鼠标右击操作
+# context_click()方法可以模拟鼠标右击操作
 from selenium import webdriver
 # 引入ActionChains类
 from selenium.webdriver.common.action_chains import ActionChains
