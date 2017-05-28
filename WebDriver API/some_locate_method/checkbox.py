@@ -8,7 +8,7 @@ driver.get(file_path)
 
 # 定位所有标签名为input的元素
 elements = driver.find_elements_by_tag_name("input")
-print(len(elements))
+print(len(elements)) # 打印标签名为input的元素的个数
 
 # 从定位的一组元素中过滤出type为checkbox的元素，并勾选中
 for i in elements:
