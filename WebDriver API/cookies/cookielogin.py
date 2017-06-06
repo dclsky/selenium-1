@@ -1,3 +1,4 @@
+# 利用已经登录的cookie绕过登录验证
 from selenium import webdriver
 import time
 
