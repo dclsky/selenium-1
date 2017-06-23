@@ -8,11 +8,11 @@ class TestCount20170621(unittest.TestCase): # 创建TestCount20170621类，继�
 
     def test_count1(self):
         a = Count(3,4) # 根据类Count创建对象
-        self.assertEqual(a.add(),7) #调用unittest的assertEqual对add()的返回值进行断言
+        self.assertEqual(a.add(), 7, msg = "bug") #调用unittest的assertEqual对add()的返回值进行断言
 
     def test_count2(self):
         b = Count(4,5)
-        self.assertEqual(b.add(),9)
+        self.assertEqual(b.add(), 9, msg = "bug")
 
     def tearDown(self): # 测试用例执行后的善后工作
         print('test end')
