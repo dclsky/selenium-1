@@ -24,4 +24,4 @@ if __name__ == '__main__':
     suite.addTest(TestCount20170621("test_count2"))
     # 执行测试
     runner = unittest.TextTestRunner() # 封装unittest的TextTestRunner()类
-    runner.run() # 调用TextTestRunner()类的run()方法来执行测试套件
+    runner.run(suite) # 调用TextTestRunner()类的run()方法来执行测试套件

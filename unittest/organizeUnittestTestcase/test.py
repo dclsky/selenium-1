@@ -50,4 +50,12 @@ class Test_div(unittest.TestCase):
         print("test end")
 
 if __name__ == '__main__':
-    unittest.main()
+    #
+    suite = unittest.TestSuite()
+    suite.addTest(Test_add("test_add"))
+    suite.addTest(Test_sub("test_sub"))
+    suite.addTest(Test_mul("test_mul"))
+    suite.addTest(Test_div("test_div"))
+
+    runner = unittest.TextTestRunner()
+    runner.run(suite)
