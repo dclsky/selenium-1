@@ -50,12 +50,13 @@ class Test_div(unittest.TestCase):
         print("test end")
 
 if __name__ == '__main__':
-    #
+    # 构建测试套件
     suite = unittest.TestSuite()
+    # 添加测试用例到测试套件
     suite.addTest(Test_add("test_add"))
     suite.addTest(Test_sub("test_sub"))
     suite.addTest(Test_mul("test_mul"))
     suite.addTest(Test_div("test_div"))
-
+    # 执行测试
     runner = unittest.TextTestRunner()
     runner.run(suite)
