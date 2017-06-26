@@ -1,0 +1,29 @@
+.E
+======================================================================
+ERROR: test_search (googletest.Baidutest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\test_projce\test_case\googletest.py", line 15, in test_search
+    driver.find_element_by_class_name("lsb").click()
+  File "D:\Program Files\Python\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 426, in find_element_by_class_name
+    return self.find_element(by=By.CLASS_NAME, value=name)
+  File "D:\Program Files\Python\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 784, in find_element
+    'value': value})['value']
+  File "D:\Program Files\Python\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 249, in execute
+    self.error_handler.check_response(response)
+  File "D:\Program Files\Python\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 193, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"class name","selector":"lsb"}
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.15063 x86_64)
+
+
+----------------------------------------------------------------------
+Ran 2 tests in 32.942s
+
+FAILED (errors=1)
+..
+----------------------------------------------------------------------
+Ran 2 tests in 24.108s
+
+OK
